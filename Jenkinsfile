@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo "Hello from Jenkins!"
+                java -version
             }
         }
         stage('Test') {
