@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Hello from Jenkins!"
-                java -version
+                script {
+                    echo 'Hello from Jenkins!'
+                    sh 'java -version'
+                }
             }
         }
         stage('Test') {
